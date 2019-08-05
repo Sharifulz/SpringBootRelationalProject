@@ -14,7 +14,7 @@ import com.exam.model.Question;
 import com.exam.model.Student;
 import com.exam.service.QuestionService;
 
-@RestController("/question")
+@RestController()
 public class QuestionController {
 
 	@Autowired

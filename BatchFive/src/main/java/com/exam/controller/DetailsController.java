@@ -15,7 +15,7 @@ import com.exam.model.Question;
 import com.exam.model.SecurityDetails;
 import com.exam.service.DetailService;
 
-@RestController("/detail")
+@RestController()
 public class DetailsController {
 
 	@Autowired

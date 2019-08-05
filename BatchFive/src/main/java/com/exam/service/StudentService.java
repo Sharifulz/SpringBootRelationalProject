@@ -12,18 +12,18 @@ import com.exam.model.Student;
 public class StudentService {
 
 	@Autowired
-	StudentRepository repo;
+	StudentRepository repoStudent;
 	
 	public List<Student> getAllStu(){
-		return repo.findAll();
+		return repoStudent.findAll();
 	}
 	public void doSaveStu(Student student) {
-		repo.save(student);
+		repoStudent.save(student);
 	}
 	public void doUpdate(Student student) {
-		repo.saveAndFlush(student);
+		repoStudent.saveAndFlush(student);
 	}
 	public void doDelete(Student student) {
-		repo.delete(student);
+		repoStudent.delete(student);
 	}
 }
