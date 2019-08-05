@@ -35,6 +35,7 @@ public class Student {
 	String tx_password;
 	String tx_gender;
 	String tx_designation;
+	int student_status;
 	 @OneToMany
 	 @JoinColumn(name = "student_id",insertable=false,  updatable=false, nullable = false, foreignKey = @ForeignKey(name = "Details_FK"))
 	 List<SecurityDetails> details;	
